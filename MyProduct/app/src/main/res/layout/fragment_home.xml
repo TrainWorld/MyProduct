@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+        <variable
+            name="myHomeOnClick"
+            type="yu.com.Onclick.MyHomeOnClick"/>
+
+    </data>
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <Button
+            android:id="@+id/get_Button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:onClick="@{myHomeOnClick.GetOnClick}"
+            android:text="GET" />
+        <Button
+            android:id="@+id/post_Button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:onClick="@{myHomeOnClick.PostOnClick}"
+            android:text="POST" />
+    </LinearLayout>
+
+</layout>
